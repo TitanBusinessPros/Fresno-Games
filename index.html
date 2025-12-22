@@ -96,7 +96,7 @@
             margin: 0 auto;
             min-height: calc(100vh - 40px);
             display: grid;
-            grid-template-rows: auto auto 1fr auto auto;
+            grid-template-rows: auto auto auto 1fr auto auto;
             gap: 20px;
         }
 
@@ -156,6 +156,41 @@
             100% {
                 transform: translateY(0px);
             }
+        }
+
+        /* Header Ads Section */
+        .header-ads-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-ads-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-ad-box {
+            display: block;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-ad-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-ad-image {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Footer Styles */
@@ -426,7 +461,12 @@
         /* Make it a bit nicer on small screens */
         @media (max-width: 900px) {
             .page-wrapper {
-                grid-template-rows: auto auto auto;
+                grid-template-rows: auto auto auto auto;
+            }
+
+            .header-ads-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
             }
 
             .middle-row {
@@ -468,6 +508,12 @@
                 padding: 6px 12px;
             }
         }
+
+        @media (max-width: 600px) {
+            .header-ads-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -491,11 +537,58 @@
 
         <!-- HEADER SECTION -->
         <header class="site-header">
-            <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Temp-Logo.png" class="header-logo" id="logo">
+            <img src="https://github.com/TitanBusinessPros/Fresno-Games/raw/main/Fresno-Games.png" class="header-logo" id="logo">
             <h1 class="header-title">Welcome To Fresno's Newest Gaming Platform! Check Back Weekly For New Games!</h1>
-            <div class="daily-message">Welcome to Fresno’s gaming hub! 🎮
-You’ve arrived at a local gaming platform built for players right here in Fresno, CA. Whether you’re stopping by to unwind, challenge your skills, or discover something new, our growing lineup of games is designed for all ages and play styles. Jump in, explore the games, and enjoy a space where Fresno comes together to play, compete, and have fun.</div>
+            <div class="daily-message">Welcome to Fresno's gaming hub! 🎮
+You've arrived at a local gaming platform built for players right here in Fresno, CA. Whether you're stopping by to unwind, challenge your skills, or discover something new, our growing lineup of games is designed for all ages and play styles. Jump in, explore the games, and enjoy a space where Fresno comes together to play, compete, and have fun.</div>
         </header>
+
+        <!-- HEADER ADS SECTION - 3 ROWS OF 4 -->
+        <section class="header-ads-section">
+            <div class="header-ads-grid">
+                <!-- Row 1 -->
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                
+                <!-- Row 2 -->
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                
+                <!-- Row 3 -->
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+                <a href="https://buy.stripe.com/eVq3cw5xn4kg2Lw3B57AI0f" target="_blank" class="header-ad-box">
+                    <img src="https://github.com/TitanBusinessPros/Gameville-/raw/main/Games-Ad.png" class="header-ad-image" alt="Advertise Here">
+                </a>
+            </div>
+        </section>
 
         <!-- CENTER: Your game / gallery -->
         <div class="middle-row">
@@ -964,6 +1057,8 @@ You’ve arrived at a local gaming platform built for players right here in Fres
             </div>
         </footer>
 
+    </div>
+
     <script>
         // Image optimization and lazy loading
         document.addEventListener('DOMContentLoaded', function() {
@@ -1117,4 +1212,4 @@ You’ve arrived at a local gaming platform built for players right here in Fres
         });
     </script>
 </body>
-  </html>
+</html>
